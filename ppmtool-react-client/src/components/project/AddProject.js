@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch,useSelector } from 'react-redux'
 import { createProject } from '../../actions/projectActions'
 
-const AddProject = (props,{nextProp}) => {
+const AddProject = (props) => {
 
     const dispatch=useDispatch()
 

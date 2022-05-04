@@ -6,7 +6,7 @@ import { projectsActions } from '../reducers/projectSlice';
 export const createProject=(project,history)=>{
     return async dispatch=>{
         try {
-            const res=await axios.post("http://localhost:8080/api/project",project)
+            await axios.post("http://localhost:8080/api/project",project)
     
             history.push("/dashboard")
             dispatch(errorActions.errorfunc({
